@@ -145,7 +145,7 @@ button:focus {
 /* Demo links */
 
 .related {
-	padding: 2em 1em;
+	padding: 2em 0 2em 1em;
 }
 
 .related h3 {
@@ -311,6 +311,8 @@ button:focus {
 	flex-direction: column;
 	-webkit-justify-content: center;
 	justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Grid item "border" */
@@ -337,8 +339,6 @@ button:focus {
 }
 
 .title--preview {
-	-webkit-flex: 1;
-	flex: 1;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-items: center;

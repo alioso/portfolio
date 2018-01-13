@@ -118,7 +118,7 @@ button:focus {
 
 /* Demo links */
 .related {
-  padding: 2em 1em; }
+  padding: 2em 0 2em 1em; }
 
 .related h3 {
   margin: 3em 0 0.5em 0;
@@ -264,7 +264,9 @@ button:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: center;
-  justify-content: center; }
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /* Grid item "border" */
 .grid__item::before {
@@ -287,8 +289,6 @@ button:focus {
   font-weight: normal; }
 
 .title--preview {
-  -webkit-flex: 1;
-  flex: 1;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
