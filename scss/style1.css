@@ -267,6 +267,27 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.grid__item__mask {
+  background: rgba(129, 196, 131, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .5s ease-in-out; }
+
+.grid__item__container {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  transition: opacity .3s ease-in-out; }
+
+.grid__item:hover .grid__item__container,
+.grid__item:hover .grid__item__mask {
+  opacity: 1; }
+
 /* Grid item "border" */
 .grid__item::before {
   position: absolute;
@@ -294,7 +315,8 @@ button:focus {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  color: #fff; }
 
 .loader {
   height: 1px;
@@ -307,10 +329,10 @@ button:focus {
   content: '';
   position: absolute;
   width: 100%;
-  height: 3px;
-  background: #a4e7ad;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
   left: 0;
-  top: -1px;
+  top: 0px;
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transform-origin: 0% 50%;
@@ -331,7 +353,8 @@ button:focus {
   font-style: italic;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
-  display: block; }
+  display: block;
+  color: #fff; }
 
 .title--preview,
 .loader,

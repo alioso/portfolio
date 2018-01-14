@@ -80,6 +80,7 @@ $viewport_xxl: 	$item_width * 6 + $sidebar_width; /* 6 columns */
 		left: 0;
 		-webkit-transition: opacity 0.3s;
 		transition: opacity 0.3s;
+		//border: 5px solid rgba(255,255,255,1);
 	}
 
 	.grid__item:hover::before,
