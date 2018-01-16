@@ -566,10 +566,7 @@ button:focus {
   font-size: 0.85em; }
   .content__item p {
     max-width: 1200px;
-    margin: 1em auto;
-    text-align: justify; }
-  .content__item p:first-of-type {
-    font-size: 1.35em; }
+    margin: 1em auto; }
 
 .content__item.content__item--show {
   height: auto;
@@ -580,6 +577,9 @@ button:focus {
   transition: opacity 0.6s; }
 
 /* content elements */
+.mc-img {
+  max-width: 100%; }
+
 .category--full {
   font-size: 1.25em;
   margin-bottom: 20px;
@@ -598,7 +598,6 @@ button:focus {
     font-weight: bold;
     margin-bottom: 20px; }
   .meta--full .meta__author::before {
-    content: 'by ';
     font-weight: normal; }
   .meta--full .meta__category {
     font-style: italic;

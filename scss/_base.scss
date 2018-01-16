@@ -652,13 +652,10 @@ button:focus {
 	padding: 60px 60px 80px 60px;
 	pointer-events: none;
 	font-size: 0.85em;
+
 	p {
 		max-width: 1200px;
 		margin: 1em auto;
-		text-align: justify;
-	}
-	p:first-of-type {
-		font-size: 1.35em;
 	}
 }
 
@@ -672,6 +669,11 @@ button:focus {
 }
 
 /* content elements */
+
+.mc-img {
+	max-width: 100%;
+}
+
 .category--full {
 	font-size: 1.25em;
 	margin-bottom: 20px;
@@ -693,7 +695,6 @@ button:focus {
 		margin-bottom: 20px;
 	}
 	.meta__author::before {
-		content: 'by ';
 		font-weight: normal;
 	}
 	.meta__category {
